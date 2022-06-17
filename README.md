@@ -1,1 +1,1 @@
-# Undergraduate-Indepdent-Researcher
+# Undergraduate Independent Researcher at the University of Bristol
