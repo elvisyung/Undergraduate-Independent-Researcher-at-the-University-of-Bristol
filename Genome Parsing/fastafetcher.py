@@ -3,9 +3,6 @@
 # Extract fasta files by their descriptors stored in a separate file.
 # Requires biopython
 
-# TODO:
-# - Create more sophisticated logic for matching IDs/Descriptions/Partial matches etc.
-#    - Create a mode variable to encapsulate invert/partial/description/id etc?
 from Bio import SeqIO
 import sys
 import argparse
