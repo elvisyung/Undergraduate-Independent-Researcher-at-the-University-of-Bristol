@@ -1,1 +1,3 @@
 # Undergraduate Independent Researcher at the University of Bristol
+
+Undertaking an independent research project under the supervisor of Dr. Jordi Paps Monsterret. Engaged in original research investigating the origins of stem-cell/'stemness' genes found throught the animal kingdom. Performing comparative phylogenomics through data extraction, cleansing and analysis on 180+ genomic datasets which led to the construction of a phylogenetic tree containing 20+ ‘stemness’ genes. Interpreting data using bioinformatics tools with Bash scription and Bristol’s High-performance computing (HPC) clusters. 
