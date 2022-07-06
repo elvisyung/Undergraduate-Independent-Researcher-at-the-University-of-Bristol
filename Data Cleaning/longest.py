@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 #!/usr/bin/env python
 from __future__ import print_function
 from Bio import SeqIO
@@ -36,10 +33,3 @@ def print_longest_transcripts(transcripts, number):
 
     for record in longest[:number]:
         print(">"+record.id, record.seq, sep="\n")
-
-
-# In[ ]:
-
-
-
-
