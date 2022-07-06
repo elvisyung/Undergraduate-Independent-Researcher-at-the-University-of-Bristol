@@ -1,0 +1,13 @@
+# Cleaning - emoving sequences that are shorter than 40 amino acid
+seqkit seq -m 40 hit_OG*******.txt | tee ~/40_OG*******.txt
+
+# Renaming - Removing 7 characters after skipping the > in the fasta heading of a sequence
+cat genes_hit_OG*******.txt | sed 's/>.*rn_/>/' |tee ~/hit_OG*******txt
+
+# Choosing the longest isoforms 
+awk -F’[\X.]’ '{print $1,$2,$3,$4}' <myfasta.fa>.fai | sort -k4nr,4 | sort -uk1,2 | cut -f1-3 -d' '| tr ' ' '.' > selection.ls
+
+# Function for choosing the longest isoforms 
+while read contig;
+        do samtools faidx OG*******.fa awk -F’[\X.]’ '{print $1,$2,$3,$4}' OG*******.fa.fai | sort -k4nr,4 | sort -uk1,2 | cut -f1-3 -d' '| tr ' ' '.' > parsing.ls >> final_OG*******.fa;
+done < parsing.ls
